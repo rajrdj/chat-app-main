@@ -1,0 +1,109 @@
+/* App.css */
+
+.app {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .left-sidebar {
+    flex: 1;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+    overflow-y: auto; /* Enable scrollbar if needed */
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .conversation-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .conversation {
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .conversation:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .conversation.active {
+    background-color: #e0e0e0;
+  }
+  
+  .contact-name {
+    font-weight: bold;
+  }
+  
+  .right-side-view {
+    flex: 3;
+    padding: 20px;
+  }
+  
+  .message-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .message {
+    margin-bottom: 10px;
+  }
+  
+  .message.sent-by-user {
+    text-align: right;
+  }
+  
+  .message-text {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    max-width: 70%;
+  }
+  
+  .message-received .message-text {
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  .message-timestamp {
+    font-size: 12px;
+    color: #666;
+  }
+  
+  .message-input {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .message-input input {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+  }
+  
+  .message-input button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .message-input button:hover {
+    background-color: #0056b3;
+  }
+  
